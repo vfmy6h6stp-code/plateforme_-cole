@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mbote S.L.M School</title>
+
+    <style>
+
+        /* =========================
+           RÉINITIALISATION
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #202124;
+            color: white;
+        }
+
+
+        /* =========================
+           PAGE D'ACCUEIL
+        ========================= */
+
+        .accueil {
+
+            position: relative;
+
+            min-height: 100vh;
+
+            background-image:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.48),
+                    rgba(0, 0, 0, 0.48)
+                ),
+                url("images/ecole.jpg");
+
+            background-size: cover;
+
+            background-position: center;
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+
+        /* =========================
+           BARRE DU HAUT
+        ========================= */
+
+        .header {
+
+            position: absolute;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            padding: 20px 25px;
+
+            display: flex;
+
+            align-items: center;
+
+            z-index: 10;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 18px;
+        }
+
+
+        .logo img {
+
+            width: 82px;
+
+            height: auto;
+
+            object-fit: contain;
+        }
+
+
+        /* NOM À CÔTÉ DU LOGO */
+
+        .nom-ecole {
+
+            font-size: 20px;
+
+            font-weight: 400;
+
+            color: white;
+
+            letter-spacing: 0.5px;
+        }
+
+
+        /* =========================
+           CONTENU CENTRAL
+        ========================= */
+
+        .contenu-accueil {
+
+            flex: 1;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            padding: 100px 20px 50px;
+        }
+
+
+        /* GRAND TITRE */
+
+        .contenu-accueil h1 {
+
+            font-size: clamp(42px, 6vw, 65px);
+
+            font-weight: 400;
+
+            margin-bottom: 25px;
+
+            color: white;
+
+            letter-spacing: 1px;
+
+            text-shadow:
+                0 2px 5px rgba(0,0,0,0.35);
+        }
+
+
+        /* SOUS-TITRE */
+
+        .contenu-accueil p {
+
+            font-size: clamp(18px, 2vw, 23px);
+
+            font-weight: 400;
+
+            color: white;
+
+            text-shadow:
+                0 2px 4px rgba(0,0,0,0.4);
+        }
+
+
+        /* =========================
+           VERSION TÉLÉPHONE
+        ========================= */
+
+        @media (max-width: 600px) {
+
+            .header {
+
+                padding: 15px;
+            }
+
+
+            .logo img {
+
+                width: 65px;
+            }
+
+
+            .nom-ecole {
+
+                font-size: 17px;
+            }
+
+
+            .contenu-accueil h1 {
+
+                font-size: 40px;
+            }
+
+
+            .contenu-accueil p {
+
+                font-size: 17px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         PAGE D'ACCUEIL
+    ========================= -->
+
+    <section class="accueil">
+
+
+        <!-- BARRE DU HAUT -->
+
+        <header class="header">
+
+            <div class="logo">
+
+                <!--
+                    Mets ici ton logo.
+                    Ton fichier doit être :
+                    images/logo.png
+                -->
+
+                <img
+                    src="images/logo.png"
+                    alt="Logo du Complexe Scolaire Saint-Luc Marissa"
+                >
+
+                <div class="nom-ecole">
+                    Mbote S.L.M
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- TEXTE CENTRAL -->
+
+        <div class="contenu-accueil">
+
+            <h1>
+                Mbote S.L.M school
+            </h1>
+
+            <p>
+                Ensemble pour la réussite de vos enfants
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>
